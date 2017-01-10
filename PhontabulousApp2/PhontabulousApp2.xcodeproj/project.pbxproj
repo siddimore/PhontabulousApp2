@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441E92D01E24875900A9E0E3 /* FontUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441E92CF1E24875900A9E0E3 /* FontUtils.swift */; };
+		441E92D21E248E2600A9E0E3 /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441E92D11E248E2600A9E0E3 /* ApiEndPoints.swift */; };
+		441E92D61E24A26900A9E0E3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441E92D31E249B7D00A9E0E3 /* DetailViewController.swift */; };
 		44AB75951E20094E006ABC0A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44AB75941E20094E006ABC0A /* SWRevealViewController.m */; };
 		44AB759F1E200C9E006ABC0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AB75961E200C9E006ABC0A /* AppDelegate.swift */; };
 		44AB75A11E200C9E006ABC0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AB75981E200C9E006ABC0A /* Images.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		441E92CF1E24875900A9E0E3 /* FontUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontUtils.swift; sourceTree = SOURCE_ROOT; };
+		441E92D11E248E2600A9E0E3 /* ApiEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndPoints.swift; sourceTree = SOURCE_ROOT; };
+		441E92D31E249B7D00A9E0E3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		44AB758F1E1FEB35006ABC0A /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		44AB75931E20094E006ABC0A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		44AB75941E20094E006ABC0A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -73,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441E92CE1E24874400A9E0E3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				441E92CF1E24875900A9E0E3 /* FontUtils.swift */,
+				441E92D11E248E2600A9E0E3 /* ApiEndPoints.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		44AB758E1E1FEAEF006ABC0A /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +121,7 @@
 		F47029F21A7F27DB00E30A3C /* PhontabulousApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				441E92CE1E24874400A9E0E3 /* Helper */,
 				44AB75991E200C9E006ABC0A /* Info.plist */,
 				44AB75961E200C9E006ABC0A /* AppDelegate.swift */,
 				44AB75981E200C9E006ABC0A /* Images.xcassets */,
@@ -125,6 +141,7 @@
 				44AB759C1E200C9E006ABC0A /* NewsTableViewCell.swift */,
 				44AB759D1E200C9E006ABC0A /* NewsTableViewController.swift */,
 				44AB759E1E200C9E006ABC0A /* PhotoViewController.swift */,
+				441E92D31E249B7D00A9E0E3 /* DetailViewController.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -193,7 +210,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = AppCoda;
+				ORGANIZATIONNAME = "Phontabulous Inc";
 				TargetAttributes = {
 					F47029EF1A7F27DB00E30A3C = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -255,14 +272,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441E92D61E24A26900A9E0E3 /* DetailViewController.swift in Sources */,
 				44AB75AF1E200DBD006ABC0A /* PhontabulousApp2Tests.swift in Sources */,
 				44AB75A41E200C9E006ABC0A /* MenuController.swift in Sources */,
 				44AB75A51E200C9E006ABC0A /* NewsTableViewCell.swift in Sources */,
 				44AB759F1E200C9E006ABC0A /* AppDelegate.swift in Sources */,
+				441E92D01E24875900A9E0E3 /* FontUtils.swift in Sources */,
 				44AB75951E20094E006ABC0A /* SWRevealViewController.m in Sources */,
 				44AB75A31E200C9E006ABC0A /* MapViewController.swift in Sources */,
 				44AB75A61E200C9E006ABC0A /* NewsTableViewController.swift in Sources */,
 				44AB75A71E200C9E006ABC0A /* PhotoViewController.swift in Sources */,
+				441E92D21E248E2600A9E0E3 /* ApiEndPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

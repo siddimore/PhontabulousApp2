@@ -2,8 +2,8 @@
 //  NewsTableViewController.swift
 //  SidebarMenu
 //
-//  Created by Simon Ng on 2/2/15.
-//  Copyright (c) 2015 AppCoda. All rights reserved.
+//  Created by Siddharth More on 1/7/17
+//  Copyright © 2017 Phontabulous Inc. All rights reserved.
 //
 
 import UIKit
@@ -51,21 +51,24 @@ class NewsTableViewController: UITableViewController {
         // Configure the cell...
         if indexPath.row == 0 {
             cell.postImageView.image = UIImage(named: "Mango")
+            FontUtils.setProperties(cell.postTitleLabel)
             cell.postTitleLabel.text = "Item-1"
-            cell.authorLabel.text = "Siddharth More"
-            cell.authorImageView.image = UIImage(named: "author")
+//            cell.authorLabel.text = "Siddharth More"
+//            cell.authorImageView.image = UIImage(named: "author")
             
         } else if indexPath.row == 1 {
             cell.postImageView.image = UIImage(named: "Tomato")
+            FontUtils.setProperties(cell.postTitleLabel)
             cell.postTitleLabel.text = "Item-2"
-            cell.authorLabel.text = "Gabriel Theodoropoulos"
-            cell.authorImageView.image = UIImage(named: "appcoda-300")
+//            cell.authorLabel.text = "Gabriel Theodoropoulos"
+//            cell.authorImageView.image = UIImage(named: "appcoda-300")
             
         } else {
             cell.postImageView.image = UIImage(named: "Cherry")
+            FontUtils.setProperties(cell.postTitleLabel)
             cell.postTitleLabel.text = "Item-3"
-            cell.authorLabel.text = "Siddharth More"
-            cell.authorImageView.image = UIImage(named: "appcoda-300")
+//            cell.authorLabel.text = "Siddharth More"
+//            cell.authorImageView.image = UIImage(named: "appcoda-300")
             
         }
 
@@ -118,5 +121,13 @@ class NewsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailViewSegue" {
+            if segue.destinationViewController is DetailViewController {
+                //destinationVC.numberToDisplay = counter
+            }
+        }
+    }
 
 }
