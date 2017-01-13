@@ -40,6 +40,7 @@ class DetailViewController: UIViewController, UIAlertViewDelegate {
         if alertView.tag == 1 {
             if buttonIndex == 0 {
                 print("The user is okay.")
+                navigationController?.popToRootViewControllerAnimated(true)
             } else {
                 print("The user is not okay.")
             }
