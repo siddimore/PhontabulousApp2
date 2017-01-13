@@ -1,6 +1,5 @@
 //
-//  NewsTableViewController.swift
-//  SidebarMenu
+//  BaseketViewController.swift
 //
 //  Created by Siddharth More on 1/7/17
 //  Copyright © 2017 Phontabulous Inc. All rights reserved.
@@ -8,7 +7,7 @@
 
 import UIKit
 
-class NewsTableViewController: UITableViewController {
+class BaseketViewController: UITableViewController {
     @IBOutlet weak var menuButton:UIBarButtonItem!
 
     override func viewDidLoad() {
@@ -46,7 +45,7 @@ class NewsTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! BasketViewCell
 
         // Configure the cell...
         if indexPath.row == 0 {

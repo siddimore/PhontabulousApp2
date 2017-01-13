@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewsTableViewCell: UITableViewCell {
+class BasketViewCell: UITableViewCell {
     
     @IBOutlet weak var postImageView:UIImageView!
     @IBOutlet weak var authorImageView:UIImageView!

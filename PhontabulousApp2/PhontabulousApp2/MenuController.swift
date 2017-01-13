@@ -28,6 +28,21 @@ class MenuController: UITableViewController {
 
     
     // MARK: - Table view data source
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let row = indexPath.row
+        print(row)
+        
+        // Logout clicked, segue to login screen
+        if(row == 2) {
+            self.performSegueWithIdentifier("LoginScreen", sender: self)
+        }
+      
+    }
+
 
 
     /*
